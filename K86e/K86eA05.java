@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.math.BigInteger;
 import java.math.*;
 
-public class Aufgabe5 {
+public class K86eA05 {
 	
 	
 	public static void main(String[]args)

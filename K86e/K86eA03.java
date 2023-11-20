@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.math.BigInteger;
 
-class K86eA01 {
+class K86eA03 {
     public static void main(String[] args) {
         String input;
         BigInteger N;
@@ -9,20 +9,22 @@ class K86eA01 {
         BigInteger sum2 = BigInteger.ZERO;
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("N: ");
+        System.out.println("(start) N: ");
         input = scan.nextLine();
         N = new BigInteger(input);
         scan.close();
 
-        sum2 = N.multiply(N.add(BigInteger.ONE)).divide(BigInteger.TWO);
+        sum2 = N.multiply(BigInteger.TWO).add(BigInteger.ONE);
 
-        while (N.compareTo(new BigInteger("1")) >= 0) {
-            sum = sum.add(N);
-            N = N.subtract(new BigInteger("1"));
+        while (N.compareTo(BigInteger.ZERO) != -1) {
+            if (N.mod(BigInteger.TWO).equals(BigInteger.ONE)) {
+                sum = sum.add(N);
+                System.out.println("" + N);
+            }
+            N = N.subtract(BigInteger.ONE);
         }
 
         System.out.println("Series  Sum: " + sum);
         System.out.println("Formula Sum: " + sum2);
-
     }
 }
