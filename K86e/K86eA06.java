@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.math.BigInteger;
-import java.math.*;
 
 public class K86eA06 {
 	
@@ -18,7 +17,7 @@ public class K86eA06 {
 		long end = time2-time1;
 		System.out.println("Is N a Prime?"+a);
 		System.out.println("Time: "+end);
-		
+		scan.close();
 	}
 	
 	public static Boolean isPrime( BigInteger N )

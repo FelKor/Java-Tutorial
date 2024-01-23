@@ -35,5 +35,6 @@ public class K86eA04 {
         String input_N = scan.nextLine();
         System.out.println("BigInteger: " + fact_S(input_N));
         System.out.println("Long: " + fact_l(Long.parseLong(input_N)));
+        scan.close();
     }
 }

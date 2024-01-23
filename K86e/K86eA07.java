@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.math.BigInteger;
-import java.math.*;
 
 public class K86eA07 {
 	
@@ -15,7 +14,7 @@ public class K86eA07 {
 		N = scan.nextBigInteger();
 		System.out.println("Geben sie ein M ein:");
 		M = scan.nextBigInteger();
-		boolean dings = true;
+		scan.close();
 		
 		long time1 = System.currentTimeMillis();
 		

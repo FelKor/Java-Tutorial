@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.math.BigInteger;
-import java.math.*;
 
 public class K86eA05 {
 	
@@ -29,7 +28,7 @@ public class K86eA05 {
 		long end = time2-time1;
 		System.out.println("Sum of Odds: "+temp3);
 		System.out.println("Time: "+end);
-		
+		scan.close();
 	}
 
 }
